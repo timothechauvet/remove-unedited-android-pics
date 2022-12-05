@@ -3,7 +3,7 @@ name: 🧪 Test Python program on Linux
 on:
   push:
     branches: 
-      - master
+      - main
   # Manual deployment
   workflow_dispatch:
 
