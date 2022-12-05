@@ -4,12 +4,14 @@
 ![Contributors](https://img.shields.io/github/contributors-anon/timothechauvet/remove-unsuffixed-files)
 ![Last Commit](https://img.shields.io/github/last-commit/timothechauvet/remove-unsuffixed-files)
 
+![Cover Remove suffix duplicates with the Python logo](./.github/gh_cover.png)
+
 Small Python program I wrote to remove unedited files taken from the Google Photos dump of my mom, containing two copies of edited AND unedited files. Turns out it's also useful for removing originals from copied files
 
 ## Purpose
 Google Takeout backups provide both edited and unedited versions of the same picture. The same picture can have a suffix "-edited" attached to it, before the .png or .jpg extension. This tools aims to remove the original versions to keep only the one with the suffix, using basic regex commands
 
-<img src="https://github.com/timothechauvet/remove-unsuffixed-files/blob/main/.github/edited_example.png?raw=true" alt="Illustration of edited pictures with the unedited versions" width="300px"/>
+<img src="./.github/edited_example.png" alt="Illustration of edited pictures with the unedited versions" width="300px"/>
 
 ## Setup
 Edit the following lines of `unedited_removal.py` :
