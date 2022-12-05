@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Returns nothing, deleted files that are doubled because of a suffix in filename 
+Returns nothing, deleted files that are doubled because of a suffix in filename
 """
 import os
 import re
