@@ -20,7 +20,7 @@ ROOTDIR = '/Users/<your name>/Pictures/'
 # is required
 SUFFIX = r"-edited"
 
-# Configure logging level, in order : 
+# Optional : Configure the logging level, in order of criticity
 # DEBUG < INFO < WARNING < ERROR < CRITICAL
 # Recommended : logging.INFO
 LOGGING_LEVEL = logging.INFO
