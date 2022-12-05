@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Returns nothing, deleted files that are doubled because of a suffix in filename 
+"""
 import os
 import re
 import logging
@@ -33,7 +36,7 @@ PATTERNINIT = r".+?(?=" + SUFFIX + r")"
 PATTERNEXT = r".+?" + SUFFIX + r"(\..+)"
 
 editedFilenames = []
-deletedCount = 0
+DELETED_COUNT = 0
 
 # Setup logger
 logging.basicConfig(
@@ -61,7 +64,7 @@ time.sleep(4)
 for editedFilename in editedFilenames:
     try:
         os.remove(ROOTDIR + editedFilename)
-        deletedCount += 1
+        DELETED_COUNT += 1
         logging.debug(
             "Deleted : %s", editedFilename
         )
@@ -75,4 +78,4 @@ for editedFilename in editedFilenames:
             "Not found : %s ", editedFilename
         )
 
-logging.warning("%d/%d deleted files.", deletedCount, len(editedFilenames))
+logging.warning("%d/%d deleted files.", DELETED_COUNT, len(editedFilenames))
